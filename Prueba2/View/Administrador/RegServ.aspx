@@ -67,6 +67,9 @@
 			<td class="auto-style18">
 				<asp:Button ID="B_MostrarSer" runat="server" Text="Mostrar" class="btn btn-success" OnClick="B_MostrarSer_Click" />
 			</td>
+			<td>
+				<asp:Button ID="B_MostrarSer0" runat="server" Text="Reporte" class="btn btn-success" OnClick="B_MostrarSer_Click" />
+			</td>
 		</tr>
 		<tr>
 			<td class="auto-style26"></td>
@@ -79,7 +82,7 @@
 					<tr>
 						<td>
 							Nombre:<br />
-							<asp:TextBox ID="TB_NomServicio" runat="server" class="form-control" Width="241px" ></asp:TextBox>
+							<asp:TextBox ID="TB_NomServicio" runat="server" class="form-control" Width="241px" MaxLength="20" ></asp:TextBox>
 						</td>
 						
 						<td>Foto Servicio:<br />
@@ -89,18 +92,18 @@
 					<tr>
 						<td>
 							Costo:<br />
-							<asp:TextBox ID="TB_CostoServicio" runat="server" class="form-control" Width="242px"></asp:TextBox>
+							<asp:TextBox ID="TB_CostoServicio" runat="server" class="form-control" Width="242px" MaxLength="6" TextMode="Month"></asp:TextBox>
 						</td>
 						
-						<td>zDescripcion Servicio:<br />
-							<asp:TextBox ID="TB_DescripcionSer" runat="server" class="form-control"></asp:TextBox>
+						<td>Descripcion Servicio:<br />
+							<asp:TextBox ID="TB_DescripcionSer" runat="server" class="form-control" MaxLength="60" Width="267px"></asp:TextBox>
 							<br />
 							</td>
 					</tr>
 					<tr>
 						<td>
 							Tiempo:<br />
-							<asp:TextBox ID="TB_TiempoServicio" runat="server" class="form-control" Width="242px" />
+							<asp:TextBox ID="TB_TiempoServicio" runat="server" class="form-control" Width="242px" MaxLength="4" TextMode="Time" />
 						</td>
 						<td>
 							&nbsp;</td>

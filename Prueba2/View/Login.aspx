@@ -121,7 +121,7 @@
 													</tr>
 													<tr>
 														<td align="right" class="auto-style35">
-															<asp:TextBox ID="UserName" runat="server" class="form-control" Width="205px" />
+															<asp:TextBox ID="UserName" runat="server" class="form-control" Width="205px" MaxLength="20" />
 														</td>
 													</tr>
 													<tr>
@@ -131,7 +131,7 @@
 													</tr>
 													<tr>
 														<td align="right" class="text-right">
-															<asp:TextBox ID="Password" runat="server" class="form-control" TextMode="Password" />
+															<asp:TextBox ID="Password" runat="server" class="form-control" TextMode="Password" MaxLength="15" />
 														</td>
 													</tr>
 													<tr>

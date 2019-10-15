@@ -47,6 +47,7 @@ public class DaoServicios
 
 	//Mostrar Servicios Registrados
 	public List<EServicios> obtenerServicio()
+	//public DataTable obtenerServicio()
 	{
 		DataTable servicio = new DataTable();
 		List<EServicios> listservicio = new List<EServicios>();
@@ -72,6 +73,7 @@ public class DaoServicios
 			}
 		}
 
+
 		listservicio = servicio.AsEnumerable().Select(m => new EServicios()
 		{
 			Id_ser = m.Field<int>("servicio_id"),
@@ -83,7 +85,8 @@ public class DaoServicios
 		}).ToList();
 
 		return listservicio;
-	}
+
+		}
 
 
 	//Modificar caracteristica del Servicio

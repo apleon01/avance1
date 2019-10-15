@@ -13,7 +13,7 @@ public partial class View_Login : System.Web.UI.Page
 	{
 		DaoLogin IngresoU = new DaoLogin();
 		DataTable data = IngresoU.login1(Login1.UserName.ToString(), Login1.Password.ToString());
-
+		
 		if (int.Parse(data.Rows[0]["user_id"].ToString()) > 0)
 		{
 			Session["nombre"] = data.Rows[0]["nombre"].ToString();
@@ -37,6 +37,8 @@ public partial class View_Login : System.Web.UI.Page
 			else
 				Response.Redirect("MenuOperador.aspx");
 		}
+		else
+			Response.Write("<script type='text/javascript'>alert('El Servicio ha sido Creado');</script>");
 	}
 
 

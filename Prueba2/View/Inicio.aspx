@@ -57,9 +57,17 @@
 			width: 181px;
 			text-align: center;
 		}
-		.auto-style33 {
+		.auto-style34 {
+			width: 496px;
+			font-size: x-large;
+		}
+		.auto-style35 {
+			font-weight: 300;
+			text-align: left;
+		}
+		.auto-style36 {
 			font-weight: bold;
-			color: #009900;
+			color: #000000;
 		}
 	</style>
 </asp:Content>
@@ -89,7 +97,7 @@
 						<td class="auto-style29">
 							<asp:Label ID="Label2" runat="server" class="font-weight-light" Text="Cabello "></asp:Label>
 							<br />
-							<asp:LinkButton ID="LinkButton5" runat="server" CssClass="auto-style33">Ver mas...</asp:LinkButton>
+							<asp:LinkButton ID="LB_Vermas1" runat="server" CssClass="auto-style36" OnClick="LB_Vermas1_Click">Ver mas...</asp:LinkButton>
 						</td>
 						<td class="auto-style15">
 							<asp:Image ID="Image3" runat="server" ImageUrl="~/Img/Inicio.jpg" class="rounded mx-auto d-block" Height="150px" Width="197px"/>
@@ -97,7 +105,7 @@
 						<td class="auto-style32">
 							<asp:Label ID="Label4" runat="server" class="font-weight-light" Text="Maquillaje"></asp:Label>
 							<br />
-							<asp:LinkButton ID="LinkButton6" runat="server" CssClass="auto-style33">Ver mas...</asp:LinkButton>
+							<asp:LinkButton ID="LB_Vermas2" runat="server" CssClass="auto-style36" OnClick="LB_Vermas2_Click">Ver mas...</asp:LinkButton>
 						</td>
 					</tr>
 				</table>
@@ -112,7 +120,7 @@
 						<td class="auto-style30">
 							<asp:Label ID="Label1" runat="server" class="font-weight-light" Text="Uñas"></asp:Label>
 							<br />
-							<asp:LinkButton ID="LinkButton7" runat="server" CssClass="auto-style33">Ver mas...</asp:LinkButton>
+							<asp:LinkButton ID="LB_Vermas3" runat="server" CssClass="auto-style36" OnClick="LB_Vermas3_Click">Ver mas...</asp:LinkButton>
 						</td>
 						<td class="auto-style9">
 							<asp:Image ID="Image1" runat="server" ImageUrl="~/Img/Manicure.jpg" class="rounded mx-auto d-block" Height="150px" Width="193px"/>
@@ -120,7 +128,7 @@
 						<td class="auto-style31">
 							<asp:Label ID="Label3" runat="server" class="font-weight-light" Text="Facial"></asp:Label>
 							<br />
-							<asp:LinkButton ID="LinkButton8" runat="server" CssClass="auto-style33">Ver mas...</asp:LinkButton>
+							<asp:LinkButton ID="LB_Vermas4" runat="server" CssClass="auto-style36" OnClick="LB_Vermas4_Click">Ver mas...</asp:LinkButton>
 						</td>
 						<td class="auto-style23">
 							<asp:Image ID="Image4" runat="server" ImageUrl="~/Img/Pedicure.jpg" class="rounded mx-auto d-block" Height="150px" Width="167px"/>
@@ -144,14 +152,39 @@
 			<td class="auto-style23">&nbsp;</td>
 			<td class="auto-style22">
 				<br />
+				<br />
+			</td>
+			<td class="auto-style24">&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="auto-style23">&nbsp;</td>
+			<td class="auto-style34"><strong>Conoce mas Sobre Nosotros...</strong></td>
+			<td class="auto-style24">&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="auto-style23">&nbsp;</td>
+			<td class="auto-style34">
+				<br />
+			</td>
+			<td class="auto-style24">&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="auto-style23">&nbsp;</td>
+			<td class="auto-style22">
+				<br />
 	
 	<img src="../Img/FondoP.png" alt="Image thumbnails" class="auto-style21"></td>
-			<td class="font-weight-light">
-				<span class="auto-style20" ><strong class="auto-style16">
-				<span class="bg-white">Quienes Somos</span></strong><strong><br />
-				<br />
+			<td class="auto-style35">
+				<div class="auto-style26">
+					<strong class="auto-style16">
+				<span class="bg-white">
+					<br />
+					Quienes Somos</span></strong><strong><br />
 	</strong>
-				</span>
+				</div>
 	<p  class="auto-style25">
 		Somos un centro de belleza con más de 15 años de experiencia dedicados a la profesión, convirtiéndonos en un referente local.
 		Nuestra pasión por la belleza y búsqueda constante es satisfacer a nuestros clientes, esta es nuestra motivación desde el año 2000 para seguir trabajando.
