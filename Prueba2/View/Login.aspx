@@ -19,9 +19,6 @@
 			font-size: xx-large;
 			width: 71%;
 		}
-		.auto-style24 {
-			width: 108%;
-		}
 		.auto-style25 {
 			font-weight: bold;
 			width: 71%;
@@ -34,12 +31,6 @@
 		}
 		.auto-style30 {
 			width: 103%;
-		}
-		.auto-style34 {
-			width: 98%
-		}
-		.auto-style35 {
-			width: 97%
 		}
 		.auto-style36 {
 			width: 51%
@@ -71,6 +62,9 @@
 		.auto-style44 {
 			text-align: center;
 			width: 78px;
+		}
+		.auto-style45 {
+			text-align: left;
 		}
 	</style>
 </asp:Content>
@@ -108,38 +102,40 @@
 								<LayoutTemplate>
 									<table cellpadding="1" cellspacing="0" style="border-collapse:collapse;">
 										<tr>
-											<td class="auto-style24">
+											<td>
 												<table cellpadding="0">
 													<tr>
-														<td align="center" class="auto-style34"></td>
+														<td align="center"></td>
 													</tr>
 													<tr>
-														<td><strong>
-															<asp:Label ID="UserNameLabel" runat="server" class="font-weight-light" AssociatedControlID="UserName">Usuario:</asp:Label>
+														<td class="auto-style45">
+															<asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName">Nombre de usuario:</asp:Label>
 															<br />
-															</strong></td>
-													</tr>
-													<tr>
-														<td align="right" class="auto-style35">
-															<asp:TextBox ID="UserName" runat="server" class="form-control" Width="205px" MaxLength="20" />
+															<asp:TextBox ID="UserName" runat="server" class="form-control"></asp:TextBox>
+															<asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="UserName" ErrorMessage="El nombre de usuario es obligatorio." ToolTip="El nombre de usuario es obligatorio." ValidationGroup="Login1">*</asp:RequiredFieldValidator>
 														</td>
 													</tr>
 													<tr>
-														<td class="text-left"><strong>
-															<asp:Label ID="PasswordLabel" runat="server" class="font-weight-light" AssociatedControlID="Password">Contraseña:</asp:Label>
-															</strong></td>
-													</tr>
-													<tr>
-														<td align="right" class="text-right">
-															<asp:TextBox ID="Password" runat="server" class="form-control" TextMode="Password" MaxLength="15" />
+														<td>
+															<asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password">Contraseña:</asp:Label>
+															<br />
+															<asp:TextBox ID="Password" runat="server" TextMode="Password" class="form-control"></asp:TextBox>
+															<asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password" ErrorMessage="La contraseña es obligatoria." ToolTip="La contraseña es obligatoria." ValidationGroup="Login1">*</asp:RequiredFieldValidator>
 														</td>
 													</tr>
 													<tr>
-														<td>&nbsp;</td>
+														<td>
+															<asp:CheckBox ID="RememberMe" runat="server" Text="Recordármelo la próxima vez." />
+														</td>
 													</tr>
 													<tr>
-														<td class="text-right" style="color:Red;">
-															<asp:Button ID="LoginButton" runat="server" class="btn btn-outline-success" CommandName="Login" Text="Ingresar" type="button" ValidationGroup="L_Autenticate" OnClick="Login_Autenticate" />
+														<td align="center" style="color:Red;">
+															<asp:Literal ID="FailureText" runat="server" EnableViewState="False"></asp:Literal>
+														</td>
+													</tr>
+													<tr>
+														<td align="right">
+															<asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Ingresar" ValidationGroup="L_Autenticate" class="btn btn-outline-success" OnClick="Login_Autenticate" />
 														</td>
 													</tr>
 												</table>

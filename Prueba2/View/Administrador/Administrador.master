@@ -101,6 +101,12 @@
 							</td>
 						</tr>
 						<tr>
+							<td class="auto-style15">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<asp:LinkButton ID="LB_AgregarCo" runat="server" OnClick="LB_AgregarCombos_Click">Agregar Combos</asp:LinkButton>
+							</td>
+						</tr>
+						<tr>
 							<td class="auto-style11">
 								<asp:HyperLink ID="HyperLink4" runat="server">Empleado</asp:HyperLink>
 							</td>

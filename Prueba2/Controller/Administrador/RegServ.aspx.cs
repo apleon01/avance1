@@ -34,8 +34,6 @@ public partial class View_RegServ : System.Web.UI.Page
 		{
 			saveLocation = saveLocation + "\\FotosS\\" + nomArchivo;
 			servicios.Foto = saveLocation;
-			cm.RegisterClientScriptBlock(this.GetType(), "", "<script type='text/javascript'>alert('El Servicio ha sido Creado');</script>");
-			return;
 		}
 		else
 		{
@@ -50,6 +48,5 @@ public partial class View_RegServ : System.Web.UI.Page
 		}
 		FU_FotoServicio.PostedFile.SaveAs(Server.MapPath(saveLocation));
 		new DaoServicios().InsertServicios(servicios);
-
 	}
 }

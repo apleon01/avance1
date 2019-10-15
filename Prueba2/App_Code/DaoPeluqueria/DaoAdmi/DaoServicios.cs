@@ -107,6 +107,8 @@ public class DaoServicios
 			dataAdapter.SelectCommand.Parameters.Add("_descripcion", NpgsqlDbType.Text).Value = descripcion;
 			dataAdapter.SelectCommand.Parameters.Add("_id_ser", NpgsqlDbType.Integer).Value = id_ser;
 
+			
+
 			conection.Open();
 			dataAdapter.Fill(servicio);
 		}

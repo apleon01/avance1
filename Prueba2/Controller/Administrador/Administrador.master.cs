@@ -37,6 +37,10 @@ public partial class View_Administrador : System.Web.UI.MasterPage
 	{
 		Response.Redirect("~/View/Administrador/MosServicios.aspx");
 	}
+	protected void LB_AgregarCombos_Click(object sender, EventArgs e)
+	{
+		Response.Redirect("~/View/Administrador/AgregarCombos.aspx");
+	}
 
 	protected void LB_CerrarS_Click(object sender, EventArgs e)
 	{
@@ -51,5 +55,7 @@ public partial class View_Administrador : System.Web.UI.MasterPage
 		Response.Redirect("~/View/Login.aspx");
 
 	}
-		
+
+
+	
 }

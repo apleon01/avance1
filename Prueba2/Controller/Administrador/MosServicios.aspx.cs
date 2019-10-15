@@ -50,8 +50,13 @@ public partial class View_Administrador_MosServicios : System.Web.UI.Page
 		}
 		else
 		{
-
+			
 			e.NewValues.Add("foto", ((Image)fila.FindControl("EditImgSer")).ImageUrl);
 		}
+	}
+
+	protected void GV_MServicios_RowDataBound(object sender, GridViewRowEventArgs e)
+	{
+
 	}
 }

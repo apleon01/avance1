@@ -14,7 +14,7 @@
 			<td>&nbsp;</td>
 			<td>
 				<div class="text-center">
-				<asp:GridView ID="GV_MServicios" runat="server" AutoGenerateColumns="False" DataKeyNames="id_ser" DataSourceID="ODS_MosServicio" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" CssClass="auto-style17" GridLines="Horizontal" OnRowUpdating="GV_MServicios_RowUpdating">
+				<asp:GridView ID="GV_MServicios" runat="server" AutoGenerateColumns="False" DataKeyNames="id_ser" DataSourceID="ODS_MosServicio" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" CssClass="auto-style17" GridLines="Horizontal" OnRowUpdating="GV_MServicios_RowUpdating" OnRowDataBound="GV_MServicios_RowDataBound">
 					<Columns>
 						<asp:BoundField DataField="NomServicio" HeaderText="NomServicio" SortExpression="NomServicio" />
 						<asp:BoundField DataField="Costo" HeaderText="Costo" SortExpression="Costo" />
